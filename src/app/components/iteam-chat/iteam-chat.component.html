@@ -1,0 +1,17 @@
+<!-- Lista de contactos -->
+
+<div class="chat-list">
+  <div class="chat-list__search">
+    <input type="text" placeholder="Buscar contacto">
+  </div>
+  <div class="chat-list__contacts">
+    <div class="chat-list__contact" *ngFor="let contact of contacts">
+      <div class="chat-list__contact-avatar">
+        <img [src]="contact.avatar" alt="Avatar">
+      </div>
+      <div class="chat-list__contact-info">
+        <h3>{{ contact.name }}</h3>
+        <p>{{ contact.lastMessage }}</p>
+      </div>
+    </div>
+  </div>
