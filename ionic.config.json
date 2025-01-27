@@ -1,0 +1,7 @@
+{
+  "name": "Wasap",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,122 @@
+<ion-content [fullscreen]="true">
+  <!-- Encabezado -->
+  <ion-header>
+    <ion-toolbar>
+      <ion-title size="large" color="light">Wassa</ion-title>
+      <ion-buttons slot="end">
+        <!-- Botón de Cámara -->
+        <ion-button>
+          <ion-icon slot="icon-only" name="camera-outline" color="light"></ion-icon>
+        </ion-button>
+        <!-- Botón de Configuración -->
+        <ion-button routerLink="/configuracion">
+          <ion-icon slot="icon-only" name="settings-outline" color="light"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Barra de búsqueda -->
+  <ion-toolbar>
+    <ion-searchbar placeholder="Preguntar a Meta AI o buscar"></ion-searchbar>
+  </ion-toolbar>
+
+  <!-- Segmentos -->
+  <ion-segment value="todos">
+    <ion-segment-button value="todos">
+      <ion-label>Todos</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="no-leidos">
+      <ion-label>No leídos</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="favoritos">
+      <ion-label>Favoritos</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="grupos">
+      <ion-label>Grupos</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <!-- Lista de contactos -->
+  <ion-list>
+    <ion-item button detail>
+      <ion-avatar slot="start">
+        <img alt="Avatar de Mama" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <ion-label>
+        <h2>Mama</h2>
+        <p>visto</p>
+      </ion-label>
+    </ion-item>
+   
+    <ion-item button detail>
+      <ion-avatar slot="start">
+        <img alt="Avatar de Mama" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <ion-label>
+        <h2>Fernando</h2>
+        <p>visto</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item button detail>
+      <ion-avatar slot="start">
+        <img alt="Avatar de Mama" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <ion-label>
+        <h2>Marco</h2>
+        <p>visto</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item button detail>
+      <ion-avatar slot="start">
+        <img alt="Avatar de Mama" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <ion-label>
+        <h2>Salomon</h2>
+        <p>visto</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-item button detail>
+    <ion-avatar slot="start">
+      <img alt="Avatar de Mama" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <ion-label>
+      <h2>Sonic</h2>
+      <p>visto</p>
+    </ion-label>
+  </ion-item>
+
+  <!-- Botón flotante -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="success" routerLink="/agregar">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <!-- Barra de navegación -->
+  <ion-tabs>
+    <ion-router-outlet></ion-router-outlet>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home" routerLink="/home">
+        <ion-icon name="chatbubbles"></ion-icon>
+        <ion-label>Inicio</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="novedades" routerLink="/novedades">
+        <ion-icon name="list-circle-outline"></ion-icon>
+        <ion-label>Novedades</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="grupos" routerLink="/grupos">
+        <ion-icon name="people"></ion-icon>
+        <ion-label>Grupos</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="llamadas" routerLink="/llamadas">
+        <ion-icon name="call"></ion-icon>
+        <ion-label>Llamadas</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

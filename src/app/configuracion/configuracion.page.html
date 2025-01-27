@@ -1,0 +1,83 @@
+<ion-content>
+  <ion-header>
+    <ion-toolbar color="dark">
+      <ion-buttons slot="start">
+        <ion-button routerLink="/home">Atras</ion-button>
+      </ion-buttons>
+      <ion-title>Configuración</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding">
+    <!-- Perfil -->
+    <ion-item lines="none">
+      <ion-avatar slot="start">
+        <img alt="Avatar" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <ion-label>
+        <h2>Fernando Lezama </h2>
+        <p>Estado personalizado...</p>
+      </ion-label>
+      <ion-buttons slot="end">
+        <ion-button>
+          <ion-icon slot="icon-only" name="qr-code"></ion-icon>
+        </ion-button>
+        <ion-button>
+          <ion-icon slot="icon-only" name="add"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+
+    <!-- Opciones de Configuración -->
+    <ion-list>
+      <ion-item button>
+        <ion-icon slot="start" name="key-outline"></ion-icon>
+        <ion-label>Cuenta</ion-label>
+        <ion-note slot="end">Cambiar número, seguridad</ion-note>
+      </ion-item>
+
+      <ion-item button>
+        <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+        <ion-label>Privacidad</ion-label>
+        <ion-note slot="end">Bloquear contactos</ion-note>
+      </ion-item>
+
+      <ion-item button>
+        <ion-icon slot="start" name="person-circle-outline"></ion-icon>
+        <ion-label>Avatar</ion-label>
+        <ion-note slot="end">Editar perfil</ion-note>
+      </ion-item>
+
+      <ion-item button>
+        <ion-icon slot="start" name="list-circle-outline"></ion-icon>
+        <ion-label>Listas</ion-label>
+        <ion-note slot="end">Administrar grupos</ion-note>
+      </ion-item>
+
+      <ion-item button>
+        <ion-icon slot="start" name="chatbubbles-outline"></ion-icon>
+        <ion-label>Chats</ion-label>
+        <ion-note slot="end">Historial, fondos</ion-note>
+      </ion-item>
+
+      <ion-item button>
+        <ion-icon slot="start" name="notifications-outline"></ion-icon>
+        <ion-label>Notificaciones</ion-label>
+        <ion-note slot="end">Tonos, alertas</ion-note>
+      </ion-item>
+
+      <ion-item button>
+        <ion-icon slot="start" name="cloud-download-outline"></ion-icon>
+        <ion-label>Almacenamiento y datos</ion-label>
+        <ion-note slot="end">Descarga automática</ion-note>
+      </ion-item>
+
+      <ion-item button>
+        <ion-icon slot="start" name="globe-outline"></ion-icon>
+        <ion-label>Idioma</ion-label>
+        <ion-note slot="end">Español</ion-note>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+</ion-content>
